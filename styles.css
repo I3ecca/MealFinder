@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
 
 
 * {
@@ -17,7 +17,7 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    font-family: 'Suez One', serif;
+    font-family: "Suez One", serif;
     -webkit-text-stroke: 1px #181616;
   }
   
@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 38vh;
   }
   
   .flex {
@@ -45,8 +46,14 @@
     margin: 0;
   }
   
-  input[type='text'] {
+  input[type="text"] {
     width: 300px;
+  }
+
+  ::placeholder {
+      color:rgba(55,55,55,0.4);
+      -webkit-text-stroke: rgba(55,55,55,0.4);
+      font-family: "Suez One", serif;
   }
   
   .search-btn {
@@ -141,6 +148,13 @@
     margin: 0 5px 5px 0;
     text-align: justify;
   }
+
+  #homeBtn {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    width: 70%;
+  }
   
   @media (max-width: 800px) {
     .meals {
@@ -158,7 +172,7 @@
     }
   }
   @media (max-width: 500px) {
-    input[type='text'] {
+    input[type="text"] {
       width: 100%;
     }
   
